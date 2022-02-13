@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/.vscode": true,
+    "**/artifacts": true,
+    "**/cache": true,
+    "**/.eslintrc.js": true,
+    "**/.prettierignore": true,
+    "**/.prettierrc": true,
+    "**/.eslintignore": true,
+    "**/.gitignore": true,
+    "**/.npmignore": true,
+    "**/.solhint.json": true,
+    "**/.solhintignore": true,
+    "**/.tsconfig.json": true,
+    "**/README.md": true,
+    "**/LICENSE": true
+  }
+}

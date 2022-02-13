@@ -1,0 +1,31 @@
+.userprofilebyid {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    padding: 0.5em;
+
+
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.5em;
+        max-width: 50%;
+        border: 3px solid green;
+        box-sizing: content-box;
+
+
+    }
+
+    label {
+        padding: 0.5em;
+        width: 100%;
+        box-sizing: content-box;
+
+    }
+}
