@@ -25,12 +25,29 @@ Your app is ready to be deployed!
 
 ### `Decisiones`
 
-- Se obta por usar reactJS la ultima version
+- Se opta por usar reactJS la ultima versión
 - Tiene añadidos unos paquetes por defectos como husky que automatiza el formateo
 - La estructura del diseño se ha intentado organizar de la siguiente forma
-  - componentes => los componentes de la aplicacion
+  - componentes => los componentes de la aplicación
   - constants => fichero donde se agruparan todos los valores comunes
   - libs => Uso destinado al tipado
-  - pages => las dos unicas paginas que tiene la aplicacion 
-  - servicios => Un manejador comun de peticiones
+  - pages => las dos únicas páginas que tiene la aplicación 
+  - services => Un manejador comun de peticiones
   - utils => Usada para manejar funciones repetitivas, en este caso el Calendario
+- La gestión de errores se manejan en dos partes
+  - Por un lado la de las peticiones se manejan en los servicios enviando por parámetro los hooks
+  - Por otro lado se maneja los estados de formulario de si debe aparecer o no tanto como el tooltip
+- Por último la decisión técnica se ha tratado de implementar 
+  - funciones de hooks, 
+  - funciones por argumentos
+  - Y rehusar  el código más usado
+  - No se ha usado redux porque se trata de un MPV y la arquitectura tiene que ser simple y diseño reducido
+  - En el tema de diseño se ha implementado de una forma muy basica SCSS.
+
+### `Objeciones`
+
+Hay que tener en cuenta que la aplicación aun ser sencilla en la propuesta se deja bastante al libre interpretación, ej: El objeto de obtener y enviar no contiene los mismos parámetros, da confusion al inicio.
+El calendario es un sistema complejo ya que no deja una interpretación concisa, porque hay que tener en cuenta si debe o no tener fecha inicial, el tipo de formato además que implementar un componente propio dispararía el tiempo de desarrollo, se opta por usar alguno disponible. 
+El sistema de navegación se interpreta de diferentes formas aun que uno opta por url amigables para el SEO
+Por ultimo el sistema post es un multipart que debería especificarse en la prueba, si no tiene algun tipo de dato especial yo lo ubiera implementado en JSON
+
