@@ -43,6 +43,10 @@ Your app is ready to be deployed!
   - Y rehusar  el código más usado
   - No se ha usado redux porque se trata de un MPV y la arquitectura tiene que ser simple y diseño reducido
   - En el tema de diseño se ha implementado de una forma muy basica SCSS.
+- Enlaces el sistema de enlace detecta el path por user y por errores y por 404
+  - https://helloteca-a8a2f.web.app/user/1 <-- **OK** 
+  - https://helloteca-a8a2f.web.app/user/5 <-- **KO**
+  - https://helloteca-a8a2f.web.app/kljkljkl <-- **KO**
 
 ### `Objeciones`
 
